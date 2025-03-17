@@ -1,16 +1,22 @@
 .salve {
     text-align: center;
     margin-top: 100px;
+    animation: salve .5s ease-in-out;
 }
 
 ion-card {
     width: 50%;
     min-height: 200px;
-    max-height: 300px;
+    max-height: 350px;
     margin: 20px auto;
     border-radius: 20px;
 }
 
 ion-checkbox {
     margin: 20px 0 20px 0;
+}
+
+@keyframes salve {
+    from{ opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
